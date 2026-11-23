@@ -1,0 +1,33 @@
+{
+  "mode": "SRT-only; ASR was unavailable in the local rendering environment",
+  "corrections": [
+    {
+      "cue": 2,
+      "time": "00:00:01.158",
+      "before": "Google Mapকীভাবে",
+      "after": "Google Map কীভাবে",
+      "evidence": "Missing whitespace at a word boundary; no words or brand spelling changed",
+      "level": "certain formatting correction"
+    },
+    {
+      "cue": 6,
+      "time": "00:00:15.284",
+      "before": "কোটি কোটিsmartphone",
+      "after": "কোটি কোটি smartphone",
+      "evidence": "Missing whitespace at a word boundary; no words changed",
+      "level": "certain formatting correction"
+    }
+  ],
+  "suspicions": [
+    {
+      "time": "00:00:00.140–00:00:01.158",
+      "text": "Google Map",
+      "note": "The SRT also uses Google Maps elsewhere. Retained as written because ASR was unavailable and brand wording cannot be inferred from context alone."
+    }
+  ],
+  "timing": {
+    "last_srt_cue_end_seconds": 120.44,
+    "mp3_frame_estimate_seconds": 120.764,
+    "method": "Cue-local grapheme-weighted word distribution; no ASR word timestamps"
+  }
+}
