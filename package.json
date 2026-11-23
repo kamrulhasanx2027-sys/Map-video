@@ -1,0 +1,25 @@
+{
+  "name": "google-maps-traffic-explainer",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "preview": "remotion studio src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "render": "remotion render src/index.ts TrafficExplainer out/google-maps-traffic-explainer.mp4 --codec=h264 --crf=18 --pixel-format=yuv420p --audio-codec=aac",
+    "render:frames": "remotion still src/index.ts TrafficExplainer out/preview.png --frame=75"
+  },
+  "dependencies": {
+    "@fontsource/hind-siliguri": "5.2.6",
+    "@fontsource/manrope": "5.2.6",
+    "@remotion/cli": "4.0.545",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.545"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.12",
+    "typescript": "5.7.2"
+  }
+}
